@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <!-- upper navbar -->
+    <nav class="flex bg-[#BF2D0D] text-white">
+      <div class="left_nav w-1/2 flex justify-between p-4">
+        <p>Email Address: autoservice@gmail.com</p>
+        <p class="hidden md:block">Contact Number: +91-1234567890</p>
+      </div>
+      <div class="right_nav w-1/2 flex justify-end p-4">
+        <p>Location: Kolkata</p>
+      </div>
+    </nav>
+
+    <!-- navbar -->
+    <nav class="flex bg-[#f2f3f3] text-black">
+      <div class="left_nav w-1/2 flex justify-between p-4">
+        <img class="w-24" src="./images/Main Logo.png" alt="logo" />
+      </div>
+      <ul class="left_nav w-1/2 hidden md:flex justify-between items-center">
+        <li>Home</li>
+        <li>Service</li>
+        <li>About Us</li>
+        <li>Spares</li>
+        <li>Contact</li>
+      </ul>
+
+      <div class="right_nav w-1/2 hidden md:flex justify-end p-4 align-center">
+        <div class="flex items-center gap-4">
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+              />
+            </svg>
+          </div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+              />
+            </svg>
+          </div>
+          <button>LOG IN</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <div>
+      <div
+        class="flex bg-[url('./images/Banner_img.png')] items-center justify-center mx-auto bg-cover bg-center"
+      >
+        <div
+          class="max-w-6xl flex flex-col lg:flex-row items-center backdrop-blur-xs w-full px-4 py-8"
+        >
+          <!-- Left Hero Section -->
+          <div class="left_hero w-full lg:w-1/2 text-center lg:text-left">
+            <div class="p-4">
+              <p class="text-red-600 text-[24px]">PERFORMANCE</p>
+              <p class="text-[32px] lg:text-[52px] text-white font-semibold">
+                We Will Help You Find The Best Solution!
+              </p>
+              <p class="text-[14px] lg:text-[16px] text-white mt-4 mb-6">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever.
+              </p>
+              <button
+                class="bg-white text-red-600 p-2 rounded font-semibold hover:bg-gray-100"
+              >
+                Read more
+              </button>
+            </div>
+          </div>
+
+          <!-- Right Hero Section (Form) -->
+          <div class="right_hero w-full lg:w-1/2 mt-8 lg:mt-0">
+            <div
+              class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md mx-auto"
+            >
+              <h2 class="text-lg font-semibold text-center text-gray-800">
+                Experience The Best Services
+              </h2>
+              <div class="flex justify-center my-3 border-b pb-2">
+                <span class="mx-4 text-gray-600 cursor-pointer">2 Wheeler</span>
+                <span class="mx-4 text-gray-600 cursor-pointer">4 Wheeler</span>
+              </div>
+              <form>
+                <div class="space-y-3">
+                  <select
+                    class="w-full p-2 border rounded bg-gray-100 text-gray-500"
+                  >
+                    <option>Select Manufacture</option>
+                  </select>
+                  <select
+                    class="w-full p-2 border rounded bg-gray-100 text-gray-500"
+                  >
+                    <option>Select Model</option>
+                  </select>
+                  <div
+                    class="flex flex-col sm:flex-row sm:space-x-2 space-y-3 sm:space-y-0"
+                  >
+                    <select
+                      class="w-full sm:w-1/2 p-2 border rounded bg-gray-100 text-gray-500"
+                    >
+                      <option>Year Range</option>
+                    </select>
+                    <select
+                      class="w-full sm:w-1/2 p-2 border rounded bg-gray-100 text-gray-500"
+                    >
+                      <option>Category</option>
+                    </select>
+                  </div>
+                  <div
+                    class="flex flex-col sm:flex-row sm:space-x-2 space-y-3 sm:space-y-0"
+                  >
+                    <select
+                      class="w-full sm:w-1/2 p-2 border rounded bg-gray-100 text-gray-500"
+                    >
+                      <option>Variant</option>
+                    </select>
+                    <select
+                      class="w-full sm:w-1/2 p-2 border rounded bg-gray-100 text-gray-500"
+                    >
+                      <option>Fuel Type</option>
+                    </select>
+                  </div>
+                  <button
+                    class="w-full bg-red-600 text-white py-2 rounded font-semibold hover:bg-red-700"
+                  >
+                    SEARCH
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Expert Service  -->
+    <div class="bg-[#393939] text-white">
+      <section class="text-center py-16">
+        <h1 class="text-xl md:text-3xl md:text-4xl font-semibold">
+          We Provide
+          <span class="bg-red-500 px-3 py-1 text-white rounded-md"
+            >Expert Service</span
+          >
+        </h1>
+        <p class="mt-4 text-sm md:text-base text-[#fff]">
+          We aim to earn your trust and have a long-term relationship with you.
+        </p>
+
+        <div
+          class="flex flex-col sm:flex-row justify-center items-center gap-8 mt-12"
+        >
+          <!-- Maintenance Card -->
+          <div class="text-center max-w-xs sm:max-w-sm">
+            <div
+              class="bg-red-500 rounded-full w-16 h-16 flex items-center justify-center mx-auto"
+            >
+              <img
+                class="w-12"
+                src="images/Rectangle 12.png"
+                alt="Maintenance Icon"
+              />
+            </div>
+            <h2 class="text-lg sm:text-xl font-semibold mt-4">Maintenance</h2>
+            <p class="text-gray-400 mt-2 text-sm sm:text-base">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+              reprehenderit...
+            </p>
+            <button
+              class="mt-4 bg-transparent px-4 py-2 rounded-sm border border-[#fff] text-sm sm:text-base"
+            >
+              Read more ▼
+            </button>
+          </div>
+
+          <!-- Wheels & Tires Card -->
+          <div class="text-center max-w-xs sm:max-w-sm">
+            <div
+              class="bg-red-500 rounded-full w-16 h-16 flex items-center justify-center mx-auto"
+            >
+              <img
+                class="w-12"
+                src="./images/Rectangle 14.png"
+                alt="Wheels Icon"
+              />
+            </div>
+            <h2 class="text-lg sm:text-xl font-semibold mt-4">
+              Wheels & Tires
+            </h2>
+            <p class="text-gray-400 mt-2 text-sm sm:text-base">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
+              nobis...
+            </p>
+            <button
+              class="mt-4 bg-transparent px-4 py-2 rounded-sm border border-[#fff] text-sm sm:text-base"
+            >
+              Read more ▼
+            </button>
+          </div>
+
+          <!-- Fuel Change Card -->
+          <div class="text-center max-w-xs sm:max-w-sm">
+            <div
+              class="bg-red-500 rounded-full w-16 h-16 flex items-center justify-center mx-auto"
+            >
+              <img
+                class="w-10"
+                src="./images/Rectangle 16.png"
+                alt="Fuel Icon"
+              />
+            </div>
+            <h2 class="text-lg sm:text-xl font-semibold mt-4">Fuel Change</h2>
+            <p class="text-gray-400 mt-2 text-sm sm:text-base">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
+              exercitationem...
+            </p>
+            <button
+              class="mt-4 bg-transparent px-4 py-2 rounded-sm border border-[#fff] text-sm sm:text-base"
+            >
+              Read more ▼
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Services -->
+    <div class="services flex flex-col md:flex-row">
+      <!-- Left Service Image -->
+      <img
+        src="./images/Mask group (8).png"
+        alt=""
+        class="left_service w-full md:w-[50%] h-auto object-cover"
+      />
+
+      <!-- Right Service Content -->
+      <div
+        class="right_service w-full md:w-[50%] bg-[#bf2d0d] text-white pt-12 md:pt-20 px-4 md:px-8"
+      >
+        <h2 class="text-lg font-semibold mb-4">
+          Below are some of the many auto repair services we offer:
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <!-- First List -->
+          <ul class="space-y-2">
+            <li>🔧 FREE 4 Wheeler Service</li>
+            <li>🔧 FREE 2 Wheeler Service</li>
+            <li>🔧 Exhaust System Repair</li>
+            <li>🔧 Wheel Alignment</li>
+            <li>🔧 Fuel System Repair</li>
+            <li>🔧 Electrical Diagnosis</li>
+            <li>🔧 Brake Service</li>
+            <li>🔧 Emission Repair</li>
+            <li>🔧 Oil Change</li>
+            <li>🔧 AC Repair</li>
+          </ul>
+
+          <!-- Second List -->
+          <ul class="space-y-2 pb-10">
+            <li>🔧 Manufacturer Recommended Service</li>
+            <li>🔧 Tire Repair and Replacement</li>
+            <li>🔧 Transmission Repair & Replacement</li>
+            <li>🔧 General Auto Repair & Maintenance</li>
+            <li>🔧 Engine Cooling System Maintenance</li>
+            <li>🔧 Starting & Charging Repair</li>
+            <li>🔧 Steering and Suspension Work</li>
+            <li>🔧 Vehicle Preventative Maintenance</li>
+            <li>🔧 State Emissions Inspection</li>
+            <li>🔧 Engine Cooling System Flush</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Why choose us -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <h2 class="text-xl md:text-4xl font-bold mb-4">
+          Why <span class="text-orange-500">Choose</span> Us
+        </h2>
+        <p class="text-gray-600 mb-8">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It was popularised in the
+          1960s with the release of Letraset sheets containing Lorem Ipsum
+          passages, and more recently with desktop publishing software like
+          Aldus PageMaker including versions of Lorem.
+        </p>
+        <p class="text-gray-600 mb-8">
+          It has survived not only five centuries, but also the leap into
+          electronic typesetting, remaining essentially unchanged. It was
+          popularised in the 1960s with the release of Letraset sheets
+          containing Lorem Ipsum passages, and more recently with desktop
+          publishing software like Aldus PageMaker including versions of Lorem
+          Ipsum. It is a long established fact that a reader will be distracted
+          by the readable content of a page when looking at its layout. The
+          point of using Lorem Ipsum is that it has a more-or-less normal
+          distribution of letters, as opposed to using 'Content here, content
+          here', making it look like readable English.
+        </p>
+        <button
+          class="px-8 py-3 bg-transparent text-[#bf2d0d] font-medium rounded-sm hover:bg-orange-600 transition border-2"
+        >
+          Read more →
+        </button>
+      </div>
+
+      <div class="mt-12">
+        <img src="./images/car_red.png" alt="Car Service" class="mx-auto" />
+      </div>
+
+      <div
+        class="mt-16 grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto text-center"
+      >
+        <div>
+          <div class="mx-auto mb-4 bg-red-600 w-[50px]">
+            <img class="border-2" src="./images/Rectangle 45.png" alt="Icon" />
+          </div>
+          <h4 class="text-xl font-semibold mb-2">1000+ Technicians</h4>
+          <p class="text-gray-600">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div>
+          <div class="mx-auto mb-4 bg-red-600 w-[50px]">
+            <img
+              class="border-2"
+              src="./images/Rectangle 45 (1).png"
+              alt="Icon"
+            />
+          </div>
+          <h4 class="text-xl font-semibold mb-2">Quality Support</h4>
+          <p class="text-gray-600">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div>
+          <div class="mx-auto mb-4 bg-red-600 w-[50px]">
+            <img
+              class="border-2"
+              src="./images/Rectangle 45 (2).png"
+              alt="Icon"
+            />
+          </div>
+          <h4 class="text-xl font-semibold mb-2">520 Locations</h4>
+          <p class="text-gray-600">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div>
+          <div class="mx-auto mb-4 bg-red-600 w-[50px]">
+            <img
+              class="border-2"
+              src="./images/Rectangle 45 (3).png"
+              alt="Icon"
+            />
+          </div>
+          <h4 class="text-xl font-semibold mb-2">10 Years Experience</h4>
+          <p class="text-gray-600">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- How we work  -->
+
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center">
+        How <span class="bg-red-500 text-white px-2 rounded">We Work</span>
+      </h2>
+      <p class="text-center text-gray-600 mt-2">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
+        luctus nec ullamcorper mattis.
+      </p>
+
+      <div
+        class="relative flex flex-col md:flex-row items-center justify-center mt-10 space-y-10 md:space-y-0 md:space-x-8"
+      >
+        <div class="flex flex-col items-center text-center w-60">
+          <div
+            class="w-32 h-32 rounded-full overflow-hidden border-4 border-gray-300"
+          >
+            <img src="./images/Mask group (9).png" alt="Select Service" />
+          </div>
+          <h3 class="font-bold mt-4">Select The Perfect Service</h3>
+          <p class="text-gray-600 text-sm mt-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+
+        <img
+          src="./images/Arrow-01 1.png"
+          alt="Arrow"
+          class="hidden md:block w-20 h-10 -rotate-12"
+        />
+
+        <div class="flex flex-col items-center text-center w-60">
+          <div
+            class="w-32 h-32 rounded-full overflow-hidden border-4 border-gray-300"
+          >
+            <img src="./images/Mask group (8).png" alt="Schedule Pick-up" />
+          </div>
+          <h3 class="font-bold mt-4">Schedule Free Doorstep Pick-up</h3>
+          <p class="text-gray-600 text-sm mt-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+
+        <img
+          src="./images/Arrow-01 2.png"
+          alt="Arrow"
+          class="hidden md:block w-20 h-10 rotate-12"
+        />
+
+        <div class="flex flex-col items-center text-center w-60">
+          <div
+            class="w-32 h-32 rounded-full overflow-hidden border-4 border-gray-300"
+          >
+            <img src="./images/Mask group (10).png" alt="Repair Vehicle" />
+          </div>
+          <h3 class="font-bold mt-4">Repair Your Vehicle</h3>
+          <p class="text-gray-600 text-sm mt-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+
+        <img
+          src="./images/Arrow-01 3.png"
+          alt="Arrow"
+          class="hidden md:block w-20 h-10 -rotate-12"
+        />
+
+        <div class="flex flex-col items-center text-center w-60">
+          <div
+            class="w-32 h-32 rounded-full overflow-hidden border-4 border-gray-300"
+          >
+            <img src="./images/Mask group (11).png" alt="Enjoy Service" />
+          </div>
+          <h3 class="font-bold mt-4">Enjoy Our Service</h3>
+          <p class="text-gray-600 text-sm mt-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- shop our products -->
+
+    <div class="container mx-auto my-20">
+      <!-- Heading -->
+      <h2 class="text-xl md:text-3xl font-bold text-center">
+        Shop
+        <span class="bg-red-500 text-white px-2 rounded text-xl md:text-3xl"
+          >Our Products</span
+        >
+      </h2>
+      <p class="text-center text-gray-600 mt-2">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
+        luctus nec ullamcorper mattis.
+      </p>
+
+      <!-- Product Carousel Section -->
+      <div class="relative flex items-center justify-center mt-8">
+        <!-- Left Arrow Button -->
+        <button
+          class="absolute left-0 bg-white p-3 rounded-full shadow-md lg:hidden"
+        >
+          &#8592;
+        </button>
+
+        <!-- Products Grid (scrollable on small screens) -->
+        <div
+          class="flex space-x-6 overflow-x-auto p-4 lg:grid lg:grid-cols-3 lg:gap-8 lg:overflow-x-visible"
+        >
+          <!-- Product 1 -->
+          <div class="bg-white rounded-lg shadow-md p-4 w-64 flex-shrink-0">
+            <div class="relative">
+              <img
+                src="./images/1662631225 1 (1).png"
+                alt="Product Image"
+                class="w-full rounded-lg"
+              />
+              <span
+                class="absolute top-2 right-2 bg-red-500 text-white text-xs px-2 py-1 rounded-full"
+                >4.5 ★</span
+              >
+            </div>
+            <h3 class="mt-4 font-bold text-sm">
+              ABC Expansion Valve, VOL ASSY, EXPANSION 1234567890
+            </h3>
+            <p class="text-gray-500 text-xs">Brand Name: ABC</p>
+            <p class="text-gray-500 text-xs">Part ID: 1234567890</p>
+            <div class="flex items-center justify-between mt-2">
+              <span class="line-through text-gray-400 text-sm">₹45.00</span>
+              <span class="text-green-600 font-bold text-lg">₹32.00</span>
+            </div>
+            <div class="flex justify-between items-center mt-3">
+              <span
+                class="bg-green-200 text-green-800 text-xs px-2 py-1 rounded"
+                >10% Off</span
+              >
+              <button
+                class="bg-red-500 text-white px-3 py-2 rounded flex items-center"
+              >
+                🛒 ADD
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="bg-white rounded-lg shadow-md p-4 w-64 flex-shrink-0">
+            <div class="relative">
+              <img
+                src="./images/Mask group (13).png"
+                alt="Product Image"
+                class="w-full rounded-lg"
+              />
+              <span
+                class="absolute top-2 right-2 bg-red-500 text-white text-xs px-2 py-1 rounded-full"
+                >4.2 ★</span
+              >
+            </div>
+            <h3 class="mt-4 font-bold text-sm">
+              KM Nature Expansion Valve, VOL ASSY, EXPANSION 6532498711
+            </h3>
+            <p class="text-gray-500 text-xs">Brand Name: KM Nature</p>
+            <p class="text-gray-500 text-xs">Part ID: 6532498711</p>
+            <div class="flex items-center justify-between mt-2">
+              <span class="line-through text-gray-400 text-sm">₹63.00</span>
+              <span class="text-green-600 font-bold text-lg">₹26.50</span>
+            </div>
+            <div class="flex justify-between items-center mt-3">
+              <span
+                class="bg-green-200 text-green-800 text-xs px-2 py-1 rounded"
+                >20% Off</span
+              >
+              <button
+                class="bg-red-500 text-white px-3 py-2 rounded flex items-center"
+              >
+                🛒 ADD
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="bg-white rounded-lg shadow-md p-4 w-64 flex-shrink-0">
+            <div class="relative">
+              <img
+                src="./images/Mask group (12).png"
+                alt="Product Image"
+                class="w-full rounded-lg"
+              />
+              <span
+                class="absolute top-2 right-2 bg-red-500 text-white text-xs px-2 py-1 rounded-full"
+                >4.4 ★</span
+              >
+            </div>
+            <h3 class="mt-4 font-bold text-sm">
+              Ostin Expansion Valve, VOL ASSY, EXPANSION 22556789
+            </h3>
+            <p class="text-gray-500 text-xs">Brand Name: Ostin</p>
+            <p class="text-gray-500 text-xs">Part ID: 22556789</p>
+            <div class="flex items-center justify-between mt-2">
+              <span class="line-through text-gray-400 text-sm">₹72.12</span>
+              <span class="text-green-600 font-bold text-lg">₹45.80</span>
+            </div>
+            <div class="flex justify-between items-center mt-3">
+              <span
+                class="bg-green-200 text-green-800 text-xs px-2 py-1 rounded"
+                >15% Off</span
+              >
+              <button
+                class="bg-red-500 text-white px-3 py-2 rounded flex items-center"
+              >
+                🛒 ADD
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Arrow Button -->
+        <button
+          class="absolute right-0 bg-white p-3 rounded-full shadow-md lg:hidden"
+        >
+          &#8594;
+        </button>
+      </div>
+
+      <!-- View More Button -->
+      <div class="flex justify-center mt-6">
+        <button
+          class="border border-red-500 text-red-500 px-4 py-2 rounded hover:bg-red-500 hover:text-white"
+        >
+          View more ➜
+        </button>
+      </div>
+    </div>
+
+    <!-- our service package -->
+    <div class="container mx-auto text-center p-10 bg-[#fdf7f6]">
+      <h2 class="text-xl md:text-2xl font-bold">
+        Our
+        <span class="bg-red-500 text-white px-2 rounded text-xl md:text-2xl"
+          >Service Package</span
+        >
+      </h2>
+
+      <!-- Packages Grid -->
+      <div class="grid md:grid-cols-3 gap-8 mt-8">
+        <div class="bg-transparent rounded-lg p-6 border-2 border-gray-200">
+          <h3 class="text-lg font-bold uppercase">Basic Package</h3>
+          <p class="text-red-500 text-2xl font-bold mt-2">
+            ₹1500.00 <span class="text-sm text-gray-600">/Month</span>
+          </p>
+          <hr class="my-4" />
+          <p class="text-gray-500 mt-2">2 Hours</p>
+          <hr class="my-4" />
+          <ul class="text-gray-500 space-y-1">
+            <li>Prewash</li>
+            <li>AC Checkup</li>
+            <li>Manual Cleaning</li>
+            <li>Interiors Vacuum</li>
+          </ul>
+          <button
+            class="mt-4 border border-red-500 text-red-500 px-4 py-2 rounded hover:bg-red-500 hover:text-white transition"
+          >
+            Book Now
+          </button>
+        </div>
+
+        <div class="bg-transparent rounded-lg p-6 border-2 border-gray-200">
+          <h3 class="text-lg font-bold uppercase">Deluxe Package</h3>
+          <p class="text-red-500 text-2xl font-bold mt-2">
+            ₹1800.00 <span class="text-sm text-gray-600">/Month</span>
+          </p>
+          <hr class="my-4" />
+          <p class="text-gray-500 mt-2">5 Hours</p>
+          <hr class="my-4" />
+          <ul class="text-gray-500 space-y-1">
+            <li>Include the Basic Package</li>
+            <li>Wheel Shine</li>
+            <li>Tire Dressing</li>
+            <li>Windows In & Out</li>
+            <li>Brakes</li>
+            <li>Steering</li>
+          </ul>
+          <button
+            class="mt-4 border border-red-500 text-red-500 px-4 py-2 rounded hover:bg-red-500 hover:text-white transition"
+          >
+            Book Now
+          </button>
+        </div>
+
+        <div class="bg-transparent rounded-lg p-6 border-2 border-gray-200">
+          <h3 class="text-lg font-bold uppercase">Platinum Package</h3>
+          <p class="text-red-500 text-2xl font-bold mt-2">
+            ₹2400.00 <span class="text-sm text-gray-600">/Month</span>
+          </p>
+          <hr class="my-4" />
+          <p class="text-gray-500 mt-2">8 Hours</p>
+          <hr class="my-4" />
+          <ul class="text-gray-500 space-y-1">
+            <li>Include the Basic Package</li>
+            <li>Include the Deluxe Package</li>
+            <li>Glass Polishing</li>
+            <li>AC Vent Cleaning</li>
+            <li>Car Exteriors</li>
+            <li>Wheel Alignment</li>
+            <li>Car Mats</li>
+            <li>Dashboard Cleaning</li>
+          </ul>
+          <button
+            class="mt-4 border border-red-500 text-red-500 px-4 py-2 rounded hover:bg-red-500 hover:text-white transition"
+          >
+            Book Now
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="container mx-auto flex flex-col md:flex-row items-center bg-white rounded-lg overflow-hidden"
+    >
+      <!-- Left Image -->
+      <div class="w-full md:w-1/2">
+        <img
+          src="./images/testimonials02_img01 1.png"
+          alt="Customer Image"
+          class="w-full h-full object-cover"
+        />
+      </div>
+
+      <!-- Right Content -->
+      <div class="w-full md:w-1/2 p-8">
+        <h2 class="text-xl font-semibold">
+          <span class="text-red-500 font-bold">Customer</span> Reviews
+        </h2>
+
+        <div class="flex items-center space-x-1 mt-2">
+          <span class="text-yellow-500 text-lg">★</span>
+          <span class="text-yellow-500 text-lg">★</span>
+          <span class="text-yellow-500 text-lg">★</span>
+          <span class="text-yellow-500 text-lg">★</span>
+          <span class="text-yellow-500 text-lg">★</span>
+        </div>
+
+        <!-- Review Text -->
+        <p class="text-gray-600 mt-4">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s.
+        </p>
+
+        <!-- Reviewer Info -->
+        <div class="flex items-center mt-6 space-x-3">
+          <img
+            src="./images/facebook (3) 1.png"
+            class="w-8 h-8"
+            alt="Facebook Logo"
+          />
+          <div>
+            <p class="font-bold">Nishtha Bhairi</p>
+            <p class="text-gray-500 text-sm">Facebook</p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between mt-6">
+          <div class="flex space-x-3">
+            <button class="text-gray-500 hover:text-gray-900">&lt;</button>
+            <button class="text-gray-500 hover:text-gray-900">&gt;</button>
+          </div>
+          <p class="text-gray-400 text-lg font-semibold">
+            1<span class="text-gray-300">/3</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Download App  -->
+    <div
+      class="flex flex-col md:flex-row items-center p-6 w-full bg-[#fdf7f6] mx-auto py-20"
+    >
+      <div class="relative w-64 h-auto md:w-72 flex-shrink-0">
+        <img src="./images/Phone.png" alt="Phone Mockup" class="w-full" />
+      </div>
+
+      <div class="md:ml-10 text-center md:text-left mt-6 md:mt-0">
+        <h2 class="text-2xl md:text-3xl font-semibold">
+          Download <span class="text-red-500">Auto Service</span> App
+        </h2>
+        <p class="text-gray-600 mt-3">
+          Choose & book our seamless auto service experience and get up to ₹500
+          off on your first service booking with the
+          <span class="text-red-500">Auto Service</span> App.
+        </p>
+
+        <div class="flex justify-center md:justify-start mt-4 space-x-3">
+          <a href="#" class="block">
+            <img
+              src="./images/Download app 1.png"
+              alt="Download from Google Play"
+              class="w-36"
+            />
+          </a>
+          <a href="#" class="block">
+            <img
+              src="./images/Download app.png"
+              alt="Download from App Store"
+              class="w-36"
+            />
+          </a>
+        </div>
+
+        <div
+          class="flex items-center border border-gray-300 rounded-lg overflow-hidden mt-5 w-full max-w-md mx-auto md:mx-0"
+        >
+          <span class="px-3 bg-gray-200 border-r border-gray-300">🇮🇳</span>
+          <input
+            type="text"
+            placeholder="Enter your mobile number"
+            class="flex-1 p-2 outline-none"
+            aria-label="Enter your mobile number"
+          />
+          <button
+            class="bg-red-500 text-white px-1 md:px-4 py-2 text-sm font-semibold hover:bg-red-600 transition-colors"
+          >
+            GET APP LINK
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Repair  -->
+    <section class="max-w-4xl mx-auto py-12 text-center">
+      <h1 class="text-3xl font-bold mb-2">
+        We Repair All Makes of <span class="text-orange-500">Automobiles</span>
+      </h1>
+      <p class="text-gray-600 mb-8">
+        We work with all makes and models of vehicles
+      </p>
+      <div class="grid grid-cols-3 md:grid-cols-6 gap-4">
+        <div
+          class="bg-transparent border-1 border-gray-300 rounded-sm p-4 flex items-center justify-center"
+        >
+          <img src="./images/Automobile 1.png" alt="Citroën" class="h-12" />
+        </div>
+        <div
+          class="bg-transparent border-1 border-gray-300 rounded-sm p-4 flex items-center justify-center"
+        >
+          <img src="./images/Automobile 2.png" alt="Daewoo" class="h-12" />
+        </div>
+        <div
+          class="bg-transparent border-1 border-gray-300 rounded-sm p-4 flex items-center justify-center"
+        >
+          <img src="./images/Automobile 3.png" alt="Audi" class="h-12" />
+        </div>
+        <div
+          class="bg-transparent border-1 border-gray-300 rounded-sm p-4 flex items-center justify-center"
+        >
+          <img src="./images/Automobile 4.png" alt="BMW" class="h-12" />
+        </div>
+        <div
+          class="bg-transparent border-1 border-gray-300 rounded-sm p-4 flex items-center justify-center"
+        >
+          <img src="./images/Automobile 5.png" alt="Chevrolet" class="h-12" />
+        </div>
+        <div
+          class="bg-transparent border-1 border-gray-300 rounded-sm p-4 flex items-center justify-center"
+        >
+          <img src="./images/Automobile 6.png" alt="Chrysler" class="h-12" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact us  -->
+    <section class="py-16 bg-[#393939] text-white">
+      <div class="text-center mb-12">
+        <h2 class="text-2xl font-bold uppercase mb-2">Contact Us</h2>
+        <p class="text-lg">Do you have a question? Feel free to contact</p>
+      </div>
+
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto"
+      >
+        <!-- Address Card -->
+        <div
+          class="bg-gray-700 p-6 rounded-lg text-center flex items-center gap-x-5"
+        >
+          <div class="mb-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-map-pin"
+            >
+              <path
+                d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+              />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+          </div>
+          <div class="text-left">
+            <h3 class="text-lg font-semibold">Address:</h3>
+            <p>123, AGC by Lane<br />Modhupur</p>
+          </div>
+        </div>
+        <!-- Address Card -->
+        <div
+          class="bg-gray-700 p-6 rounded-lg text-center flex items-center gap-x-5"
+        >
+          <div class="mb-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-map-pin"
+            >
+              <path
+                d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+              />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+          </div>
+          <div class="text-left">
+            <h3 class="text-lg font-semibold">Address:</h3>
+            <p>123, AGC by Lane<br />Modhupur</p>
+          </div>
+        </div>
+        <!-- Address Card -->
+        <div
+          class="bg-gray-700 p-6 rounded-lg text-center flex items-center gap-x-5"
+        >
+          <div class="mb-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-map-pin"
+            >
+              <path
+                d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+              />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+          </div>
+          <div class="text-left">
+            <h3 class="text-lg font-semibold">Address:</h3>
+            <p>123, AGC by Lane<br />Modhupur</p>
+          </div>
+        </div>
+        <!-- Address Card -->
+        <div
+          class="bg-gray-700 p-6 rounded-lg text-center flex items-center gap-x-5"
+        >
+          <div class="mb-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-map-pin"
+            >
+              <path
+                d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+              />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+          </div>
+          <div class="text-left">
+            <h3 class="text-lg font-semibold">Address:</h3>
+            <p>123, AGC by Lane<br />Modhupur</p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-6xl mx-auto mt-12"
+      >
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Our Services</h4>
+          <ul class="space-y-2">
+            <li>Repair</li>
+            <li>Maintenance</li>
+            <li>Diagnostic</li>
+            <li>Oil Change</li>
+            <li>Brake Repair Service</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Company</h4>
+          <ul class="space-y-2">
+            <li>About Company</li>
+            <li>Spares</li>
+            <li>FAQs</li>
+            <li>Terms & Conditions</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li>Careers</li>
+            <li>Features</li>
+            <li>Customer Feedback</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Get Our Newsletter</h4>
+          <p class="text-sm mb-4">
+            If you want to receive all weekly updates about new offers and
+            discounts, sign up below.
+          </p>
+          <form class="flex">
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              class="w-full p-2 rounded-l-sm bg-transparent border-1 border-white text-white"
+            />
+            <button
+              type="submit"
+              class="bg-red-500 p-2 rounded-r-sm border-1 border-white"
+            >
+              ➔
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer  -->
+    <footer class="bg-black py-4">
+      <div class="text-center text-white text-sm">
+        © 2023 Auto Service. All rights reserved
+      </div>
+    </footer>
+  </body>
+</html>

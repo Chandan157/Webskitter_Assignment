@@ -1,0 +1,7 @@
+.form-container {
+    background-image: url('./images/Banner img.png');
+    background-size: cover;
+    background-position: center;
+    color: white; /* Makes the text more readable on the background */
+  }
+  
